@@ -17,11 +17,14 @@ permalink: /collection/
   </div>
 </section>
 {% for post in site.posts %}
-<div class="post-area">
+<div class="chapter">
   <a href="{{post.url | prepend: site.baseurl}}">
     {% if post.img %}
     <img src={{ "/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
     {% endif %}
   </a>
+  <div class="chapter_inner">
+      <h3 class="chapter_title">{{post.title}}</h3>
+  </div>
 </div>
 {% endfor %}
