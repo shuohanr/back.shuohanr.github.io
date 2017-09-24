@@ -16,6 +16,8 @@ permalink: /collection/
     </div>
   </div>
 </section>
+<section class="chapters cf">
+<div class="wrapper">
 {% for post in site.posts %}
 <div class="chapter">
   <a href="{{post.url | prepend: site.baseurl}}">
@@ -28,3 +30,5 @@ permalink: /collection/
   </div>
 </div>
 {% endfor %}
+</div>
+</section>
