@@ -16,7 +16,7 @@ permalink: /collection/
     </div>
   </div>
 </section>
-<section class="chapters cf">
+<!--<section class="chapters cf">-->
 <div class="wrapper">
 {% for post in site.posts %}
 <div class="chapter">
@@ -25,10 +25,12 @@ permalink: /collection/
     <img src={{ "/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
     {% endif %}
   </a>
+  <!--
   <div class="chapter_inner">
       <h3 class="chapter_title">{{post.title}}</h3>
   </div>
+  -->
 </div>
 {% endfor %}
 </div>
-</section>
+<!--</section>-->
